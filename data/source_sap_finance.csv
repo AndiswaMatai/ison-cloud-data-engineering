@@ -1,0 +1,4 @@
+record_id,posting_date,department,amount,currency,status
+SAP001,2024-06-01,HR,120000,ZAR,POSTED
+SAP002,2024-06-02,Finance,450000,ZAR,PENDING
+SAP003,2024-06-03,Procurement,78000,ZAR,POSTED
