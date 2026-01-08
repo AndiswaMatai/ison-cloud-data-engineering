@@ -1,0 +1,4 @@
+op_id,op_date,process,metric,value,status
+OP001,2024-06-01,CallCenter,AvgHandleTime,320,CLOSED
+OP002,2024-06-02,Sales,ConversionRate,0.12,OPEN
+OP003,2024-06-03,Support,ResolutionTime,48,CLOSED
