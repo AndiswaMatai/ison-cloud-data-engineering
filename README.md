@@ -92,20 +92,41 @@ This mirrors **enterprise scheduling patterns** used in production environments.
 
 ---
 
-## 📊 Analytics & Performance
+## 📊 Analytics & Performance Layer
 
-📁 `analytics/`
+The `analytics/` folder contains **business-facing SQL queries** built on top of the unified fact table (`unified_fact`).  
+These queries are designed to support **cost optimization, operational monitoring, and executive reporting**.
 
-Includes:
-- Query performance monitoring
-- BigQuery slot usage analysis
-- Cost efficiency reporting
-- Historical query tracking via INFORMATION_SCHEMA
+### 📁 analytics/
+---
 
-Used to:
-- Reduce query runtimes
-- Lower compute spend
-- Support FinOps initiatives
+---
+
+### 💰 Cost Efficiency Analysis
+
+📄 `analytics/cost_efficiency.sql`
+
+This query analyzes **financial efficiency by department**, helping identify areas of high spend and optimization opportunities.
+
+**Metrics produced:**
+- Total spend per department
+- Record volumes
+- Average spend per transaction
+
+**Business use cases:**
+- Cost optimization initiatives
+- Departmental budget reviews
+- Executive cost transparency
+
+Example logic:
+```sql
+SELECT
+    department,
+    SUM(amount) AS total_spend,
+    COUNT(*) AS record_count,
+    AVG(amount) AS avg_spend
+FROM unified_fact
+GROUP BY department;
 
 ---
 
