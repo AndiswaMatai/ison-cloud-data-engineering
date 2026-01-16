@@ -1,0 +1,5 @@
+record_id,posting_date,department,amount,currency,status
+1001,2025-12-01,Finance,12000,ZAR,POSTED
+1002,2025-12-01,IT,8000,ZAR,PENDING
+1003,2025-12-02,Operations,15000,ZAR,POSTED
+1004,2025-12-03,HR,4000,ZAR,CLOSED
