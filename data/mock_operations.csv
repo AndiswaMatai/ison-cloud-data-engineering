@@ -1,0 +1,6 @@
+op_id,op_date,process,value,status
+OP01,2025-12-01,Collections,5000,OPEN
+OP02,2025-12-01,Recoveries,7000,CLOSED
+OP03,2025-12-02,Collections,3000,PENDING
+OP04,2025-12-03,Recoveries,9000,CLOSED
+
