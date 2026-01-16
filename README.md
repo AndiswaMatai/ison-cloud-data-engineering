@@ -1,3 +1,5 @@
+![CI](https://github.com/AndiswaMatai/ison-cloud-data-engineering/actions/workflows/ci.yml/badge.svg)
+
 # 🌐 Xperiences — Cloud Data Engineering Portfolio
 
 [![GCP](https://img.shields.io/badge/GCP-BigQuery%20%7C%20Dataflow%20%7C%20Composer-blue)](https://cloud.google.com/)
