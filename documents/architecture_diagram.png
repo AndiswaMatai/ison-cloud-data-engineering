@@ -1,0 +1,11 @@
+SAP CSVs        Ops CSVs
+   |                |
+   +----> ETL (Python)
+              |
+        BigQuery Staging
+              |
+        Unified Fact Table
+              |
+      Analytics SQL Layer
+              |
+        Looker / Power BI
