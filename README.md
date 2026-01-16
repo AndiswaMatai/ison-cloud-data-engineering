@@ -103,7 +103,7 @@ Used to:
 
 ## 📈 Executive Dashboard Preview
 
-![Executive Dashboard](powerbi/dashboard_screenshot.png)
+![Executive Dashboard](powerbi/dashboard_screenshot.png.png)
 
 **Dashboard Features:**
 - KPI cards (Revenue, Collections, PTPs, Cost Savings)
