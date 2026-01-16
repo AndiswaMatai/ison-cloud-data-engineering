@@ -51,8 +51,6 @@ Orchestration is handled via **Airflow (Cloud Composer)**.
 
 ---
 
----
-
 ## 🔄 ETL Design
 
 ### 1️⃣ Ingestion (Python)
@@ -72,7 +70,7 @@ Orchestration is handled via **Airflow (Cloud Composer)**.
 - Normalizes schemas and business statuses
 - Produces analytics-ready fact tables
 
-📄 `etl/etl_transformations.sql`
+📄 `etl/transformations.sql`
 
 Example logic:
 - Multi-source union
