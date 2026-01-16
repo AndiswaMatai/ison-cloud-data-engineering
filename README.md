@@ -23,8 +23,7 @@ It demonstrates how enterprise SAP and operational data can be ingested, transfo
 
 ## 🏗️ High-Level Architecture
 
-![Architecture Diagram](docs/architecture_diagram.png1)
-![Architecture Diagram](docs/architecture_diagram.png2)
+![Architecture Diagram](documents/architecture_diagram.png)
 
 **Flow:**
 
