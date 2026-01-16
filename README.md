@@ -127,8 +127,8 @@ SELECT
     AVG(amount) AS avg_spend
 FROM unified_fact
 GROUP BY department;
-
 ---
+
 
 ## 📈 Executive Dashboard Preview
 
