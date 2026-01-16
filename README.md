@@ -1,53 +1,3 @@
-# 🌐 Xperiences — Cloud Data Engineering Portfolio
-
-[![GCP](https://img.shields.io/badge/GCP-BigQuery%20%7C%20Dataflow%20%7C%20Composer-blue)](https://cloud.google.com/)
-[![Python](https://img.shields.io/badge/Python-ETL-green)](https://www.python.org/)
-[![SQL](https://img.shields.io/badge/SQL-BigQuery-orange)](https://cloud.google.com/bigquery)
-[![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-black)](https://github.com/features/actions)
-[![Looker](https://img.shields.io/badge/BI-Looker%20%7C%20Data%20Studio-purple)](https://looker.com/)
-
-This repository showcases an **end-to-end, cloud-native data engineering solution** built on **Google Cloud Platform (GCP)**.  
-It demonstrates how enterprise SAP and operational data can be ingested, transformed, governed, and delivered as **executive-ready analytics**.
-
----
-
-## 🎯 Business Objectives
-
-- Translate complex business requirements into **scalable cloud data pipelines**
-- Ingest **SAP Finance** and **operational datasets** into a unified analytics platform
-- Optimize **query performance and cloud costs**
-- Enable **executive decision-making** through curated dashboards
-- Apply **software engineering best practices** to data pipelines
-
----
-
-## 🏗️ High-Level Architecture
-
-![Architecture Diagram](docs/architecture_diagram.png1)
-![Architecture Diagram](docs/architecture_diagram.png2)
-
-**Flow:**
-
-SAP & Operational Sources  
-→ Cloud Storage  
-→ Python-based ETL ingestion  
-→ BigQuery (staging → unified facts)  
-→ Analytics & cost optimization queries  
-→ Looker / Data Studio dashboards  
-
-Orchestration is handled via **Airflow (Cloud Composer)**.
-
----
-
-## 🗂️ Repository Structure
-├── data/ # Mock SAP & operational source data
-├── etl/ # Python ingestion & SQL transformations
-├── analytics/ # Performance & cost optimization queries
-├── orchestration/ # Airflow DAGs (Cloud Composer)
-├── tests/ # Data quality & pipeline tests
-├── powerbi/ # Executive dashboard screenshots
-├── docs/ # Architecture & governance documentation
-└── .github/ # CI/CD workflows
 
 ---
 
@@ -70,7 +20,7 @@ Orchestration is handled via **Airflow (Cloud Composer)**.
 - Normalizes schemas and business statuses
 - Produces analytics-ready fact tables
 
-📄 `etl/transformations.sql`
+📄 `etl/etl_transformations.sql`
 
 Example logic:
 - Multi-source union
@@ -92,43 +42,22 @@ This mirrors **enterprise scheduling patterns** used in production environments.
 
 ---
 
-## 📊 Analytics & Performance Layer
+## 📊 Analytics & Performance
 
-The `analytics/` folder contains **business-facing SQL queries** built on top of the unified fact table (`unified_fact`).  
-These queries are designed to support **cost optimization, operational monitoring, and executive reporting**.
+📁 `analytics/`
 
-### 📁 analytics/
+Includes:
+- Query performance monitoring
+- BigQuery slot usage analysis
+- Cost efficiency reporting
+- Historical query tracking via INFORMATION_SCHEMA
+
+Used to:
+- Reduce query runtimes
+- Lower compute spend
+- Support FinOps initiatives
+
 ---
-
----
-
-### 💰 Cost Efficiency Analysis
-
-📄 `analytics/cost_efficiency.sql`
-
-This query analyzes **financial efficiency by department**, helping identify areas of high spend and optimization opportunities.
-
-**Metrics produced:**
-- Total spend per department
-- Record volumes
-- Average spend per transaction
-
-**Business use cases:**
-- Cost optimization initiatives
-- Departmental budget reviews
-- Executive cost transparency
-
-Example logic:
-```sql
-SELECT
-    department,
-    SUM(amount) AS total_spend,
-    COUNT(*) AS record_count,
-    AVG(amount) AS avg_spend
-FROM unified_fact
-GROUP BY department;
----
-
 
 ## 📈 Executive Dashboard Preview
 
@@ -219,8 +148,4 @@ Core design patterns remain consistent across platforms.
 Senior Data Engineer | Analytics & Cloud Platforms  
 
 🔗 Return to main portfolio: **Andiswa-Matai_Portfolio**
-
-
-
-🔙 Return to main portfolio: [Andiswa-Matai_Portfolio](https://github.com/AndiswaMatai/Andiswa-Matai_Portfolio)
 
