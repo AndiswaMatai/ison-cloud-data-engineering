@@ -1,3 +1,45 @@
+# 🌐 Xperiences — Cloud Data Engineering Portfolio
+
+[![GCP](https://img.shields.io/badge/GCP-BigQuery%20%7C%20Dataflow%20%7C%20Composer-blue)](https://cloud.google.com/)
+[![Python](https://img.shields.io/badge/Python-ETL-green)](https://www.python.org/)
+[![SQL](https://img.shields.io/badge/SQL-BigQuery-orange)](https://cloud.google.com/bigquery)
+[![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-black)](https://github.com/features/actions)
+[![Looker](https://img.shields.io/badge/BI-Looker%20%7C%20Data%20Studio-purple)](https://looker.com/)
+
+This repository showcases an **end-to-end, cloud-native data engineering solution** built on **Google Cloud Platform (GCP)**.  
+It demonstrates how enterprise SAP and operational data can be ingested, transformed, governed, and delivered as **executive-ready analytics**.
+
+---
+
+## 🎯 Business Objectives
+
+- Translate complex business requirements into **scalable cloud data pipelines**
+- Ingest **SAP Finance** and **operational datasets** into a unified analytics platform
+- Optimize **query performance and cloud costs**
+- Enable **executive decision-making** through curated dashboards
+- Apply **software engineering best practices** to data pipelines
+
+---
+
+## 🏗️ High-Level Architecture
+
+![Architecture Diagram](docs/architecture_diagram.png)
+
+**Flow:**
+
+SAP & Operational Sources  
+→ Cloud Storage  
+→ Python-based ETL ingestion  
+→ BigQuery (staging → unified facts)  
+→ Analytics & cost optimization queries  
+→ Looker / Data Studio dashboards  
+
+Orchestration is handled via **Airflow (Cloud Composer)**.
+
+---
+
+## 🗂️ Repository Structure
+
 
 ---
 
