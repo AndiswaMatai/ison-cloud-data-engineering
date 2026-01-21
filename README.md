@@ -25,7 +25,7 @@ It demonstrates how enterprise SAP and operational data can be ingested, transfo
 
 ## 🏗️ High-Level Architecture
 
-![Architecture Diagram](documents/architecture_diagram.png)
+![Architecture Diagram](documents/Cloud_Data_Engineering_Pipeline.png)
 
 **Flow:**
 
