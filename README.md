@@ -93,6 +93,9 @@ Includes:
 - Cost efficiency reporting
 - Historical query tracking via INFORMATION_SCHEMA
 
+  📄 `analytics/cost_effeciency.sql`
+  📄 `analytics/performance_queries.sql`
+
 Used to:
 - Reduce query runtimes
 - Lower compute spend
@@ -119,6 +122,8 @@ Dashboards are designed for **senior leadership consumption**.
 - Schema validation
 - Basic data quality checks
 - CI-integrated testing
+
+📄 `tests/test_data_quality.py`
 
 Example:
 - No negative financial values
