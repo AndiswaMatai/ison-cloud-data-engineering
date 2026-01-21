@@ -87,8 +87,6 @@ This mirrors **enterprise scheduling patterns** used in production environments.
 
 ## 📊 Analytics & Performance
 
-📁 `analytics/`
-
 Includes:
 - Query performance monitoring
 - BigQuery slot usage analysis
@@ -118,8 +116,6 @@ Dashboards are designed for **senior leadership consumption**.
 
 ## 🧪 Testing & Data Quality
 
-📁 `tests/`
-
 - Schema validation
 - Basic data quality checks
 - CI-integrated testing
@@ -143,8 +139,6 @@ Example:
 ---
 
 ## 🔐 Data Governance & Design Decisions
-
-📁 `docs/`
 
 - Data lineage and source traceability
 - Status standardization logic
